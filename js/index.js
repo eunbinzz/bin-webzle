@@ -47,6 +47,11 @@ $(".slide_group3").slick({
     arrows: false,
     prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
     nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
+    responsive: [{
+    breakpoint: 501,
+    settings: {slidesToShow: 3, centerMode: false}
+    }
+]
 })
 
 
@@ -64,10 +69,9 @@ $('.article1 .playstop').on('click', function () {
 
 
 
-var article2Near = $('.article2').offset().top - (wh / 2 + 100)
 $(window).on('scroll', function () {
     var sct = $(this).scrollTop()
-        if (sct >= article2Near && !$('.article2').hasClass('on')) {
+        if (sct >= 1 && !$('.article2').hasClass('on')) {
         $('.article2').addClass('on')
     } else if (sct === 0) {
         $('.article2').removeClass('on')
