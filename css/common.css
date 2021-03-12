@@ -27,8 +27,12 @@ button {outline: none; background: none;}
               z-index: 999; background: #fff; display: none;}
 .nav .depth2 > li > a {padding: 13px 20px; display: block; font-size: 15px; color: #555;}
 .nav .depth2 > li:hover a {background: #30a488; color:#fff}
-
-
+/* 검색창 */
+#header .search {display: inline-block; padding-right: 10px;}
+#header .search #sbox {border: none; text-indent: 1em; width: 0;
+                       overflow: hidden; transition: all 0.5s; outline: none; }
+#header .search #sbox.on {width: 170px;}
+#header .search i:hover {color: #30a488; cursor: pointer}
 
 
 /* footer구역 */
@@ -54,8 +58,10 @@ button {outline: none; background: none;}
 .ft2 .contact span:nth-child(3) {font-size: 12px;}
 
 /* go top 버튼 */
-.gotop {position: fixed; bottom: 30px; right: 30px; z-index: 999;}
+.gotop {position: fixed; bottom: 30px; right: 30px; z-index: 999;  
+        transition: all 0.5s; opacity: 0;}
+.gotop.on {opacity: 1; z-index: 99999}
 .gotop a {width: 50px; height: 50px; line-height: 50px; display: block;
-            background: rgba(0, 0, 0, 0.8); color: #fff; transition: all 0.5s;
-            text-align: center; border-radius: 50%;}
+          background: rgba(0, 0, 0, 0.8); color: #fff; transition: all 0.5s;
+          text-align: center; border-radius: 50%; font-size: 20px;}
 .gotop a:hover {background: #30a488}

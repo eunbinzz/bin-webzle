@@ -8,7 +8,8 @@
 @media screen and (max-width: 1024px) {
 /* header */
     #header {position: relative;}
-    #header.on .open, #header.on .close {position: absolute; top: 50%; right: 25px; transform: translateY(-50%);}
+    #header.on .open, #header.on .close {position: absolute; top: 50%; right: 25px; 
+                                          transform: translateY(-50%);}
     #header .open, #header .close {position: absolute; top: 53px; right: 25px;}
     #header .open.on, #header .close.on {display: block;}
     #header .open button, .close button {font-size: 35px; color: #30a488; background: none;
@@ -26,6 +27,15 @@
                  z-index: 9999999; display: none; text-align: center; padding-top: 23px;}
     .nav .depth2 > li > a {padding: 15px 20px 13px; display: block; font-size: 15px; 
                            color: #555;}
+    /* 검색창 */
+    #header .search {position: absolute; right: 55px; top: 57px; color: #30a488;
+                     transform: translateY(0%); font-size: 29px; z-index: 999999;}
+    #header .search #sbox {border: none; text-indent: 1em; width: 0;  
+                           overflow: hidden; transition: all 0.5s;
+                           outline: none; background: #eee; padding: 8px 0px; }
+    #header .search #sbox.on {width: 200px;}
+       
+
 /* 공통 */
     .title p {color: #aaa081; font-size: 20px; font-weight: bold; font-style: italic;
              margin-left: 40px;}
@@ -119,13 +129,13 @@
     .article1 .playstop {position: absolute; bottom: 115px; left: 50%; margin-left: 170px; color:rgba(255,255,255,0.2); 
                          border: none; background: none; font-size: 14px; display: none;}
     .slide_group1 .slidetext {position: absolute; top: 30%; left: 0; right: 0; line-height: 1.5;
-                         text-align: center; color: #fff; transform: translateY(-50%); 
-                         word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+                              text-align: center; color: #fff; transform: translateY(-50%); 
+                              word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
     .slide_group1 .slidetext p {font-size: 23px; font-weight: 700; padding-bottom: 20px;}
-    .slide_group1 .slidetext h2 {font-size: 41px; font-weight: 500; padding-bottom: 50px;}
+    .slide_group1 .slidetext h2 {font-size: 39px; font-weight: 500; padding-bottom: 50px;}
     .slide_group1 .slidetext a {display: inline-block; font-size: 15px; padding: 12px 40px;
-                           background: rgba(255,255,255,0.8); color: #333;
-                           font-weight: 600; transition: all 0.5s;}
+                                background: rgba(255,255,255,0.8); color: #333;
+                                font-weight: 600; transition: all 0.5s;}
 /* article2 */
     .article2 ul {text-align: center; margin-top: 30px; z-index: 99999; position: relative;}
     .article2 ul li {height: 300px; float: unset; width: 80%; margin: 0 auto; display: block;}
@@ -147,8 +157,8 @@
     .article3 .onview ul li {float: right;  width: 44%; list-style-type: disc; counter-reset: #222;
                              margin-left: 18px; font-size: 15px;} 
 /* article4 */
-    .article4 .going {float: left; width: 100%; text-align: center; margin-bottom: 20px;
-                      margin-top: 10px; margin-bottom: 60px;}
+    .article4 .going {float: left; width: 100%; text-align: center; margin-bottom: 40px;
+                      margin-top: 10px; padding: 0 70px;}
     .article4 .going div:last-child p:nth-of-type(1) {font-size: 20px; padding: 20px 0; line-height: 1.5; 
                                                       font-weight: bold;}
     .article4 .going div:last-child p:nth-of-type(2) {font-size: 15px; color: #aaa081;}
@@ -168,18 +178,18 @@
     .article6 .column2 p {color: #555; font-size: 18px; line-height: 2; margin-top: 30;}  
 /* article7*/
     .article7 .programm {padding: 40px 0px 40px 20px; background: #fff; margin-bottom: 25px; text-align: center;
-                        overflow: hidden; text-overflow: ellipsis; word-break: keep-all;}
+                         overflow: hidden; text-overflow: ellipsis; word-break: keep-all; margin-left: 30px;
+                         margin-right: 30px;}
     .article7 .programm .first {float: unset; width: 100%; display: block;}
     .article7 .programm .first p {display: block; font-size: 45px; font-weight: bold ; 
                                   padding-right: 0px; padding-bottom: 15px;}
-    .article7 .programm img {border-radius: 50%; box-shadow: 0px 10px 20px 0px rgb(33 37 43 / 20%);    
-                              cursor: pointer; position: relative; transition: all 1s; 
-                              display: inline-block; width: 20%;}
+    .article7 .programm .first img {border-radius: 50%; box-shadow: 0px 10px 20px 0px rgb(33 37 43 / 20%);    
+                                    cursor: pointer; position: relative; transition: all 1s; 
+                                    display: inline-block; width: 30%; margin: 10px 0;}
     .article7 .programm .second {float: unset; width: 100%; line-height: 1.5; margin-top: 15px; 
                                 padding-left: 10px; padding-right: 10px;}
     .article7 .programm .third {float: unset; width: 100%; margin-top: 50px; padding-right: 10px; 
                             display: block}
-   
 /* article8 */
     .article8 {height: 330px; background: url(../img/cont.jpg) no-repeat; 
            background-attachment: fixed; background-size: cover; margin-top: 100px;
@@ -218,18 +228,30 @@
 
 
 @media screen and (max-width: 500px){
+.slide_group1 .slidetext p {font-size: 18px; font-weight: 700; padding-bottom: 20px;}
+.slide_group1 .slidetext h2 {font-size: 32px; font-weight: 500; padding-bottom: 50px;}
+.slide_group1 .slidetext a {display: inline-block; font-size: 15px; padding: 12px 40px;
+          background: rgba(255,255,255,0.8); color: #333;
+          font-weight: 600; transition: all 0.5s;}
+/* article3 */
+.article3 img {float: left; animation: ani 5s ease-in-out 0s infinite alternate;
+               padding-left: 10px; width: 25%; display: none; }
+.article3 .onview {float: unset; width: 100%; padding-top: 0px; padding-right: 10px;
+                  padding-left: 30px;}
+.article3 .onview ul li {float: right;  width: 44%; list-style-type: disc; counter-reset: #222;
+                         margin-left: 18px; font-size: 15px;} 
 /* article5*/
 .article5 {margin-top: 100px; height: 650px; background: url(../img/cont.jpg) no-repeat;}
 /* article9 */
 .article9 ul li {float: left; width: 100%; margin-right: 1%; margin-bottom: 20px;
                   text-align: center; cursor: pointer; box-shadow: 0px 10px 20px 0px rgb(33 37 43 / 5%)}
 .article9 ul li:nth-child(3n) {margin-right: 0;}
-
-
-
-
-
-
+/* footer */
+.ft2 .info {position: static; top: 0%; left: 0; right: 0%; transform: translateY(0%); 
+            display: block; text-align: center; padding-bottom: 10px;}
+.ft2 .contact {float: unset;  margin-right: 0px; text-align: center;}
+.ft2 .address span:nth-child(2) {padding-bottom: 0px;}
+    
 }   /* 전체 닫는 괄호 */
 
 
