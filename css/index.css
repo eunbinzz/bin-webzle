@@ -87,9 +87,6 @@ button {outline: none; background: none;}
 .article2 li:nth-child(2) a:nth-of-type(2):hover {background: #fff; color: #222;}
 
 
-
-
-
 /* article3 구역 */
 .article3 {margin-top: 100px;}
 .article3 img {float: left; animation: ani 5s ease-in-out 0s infinite alternate;
@@ -136,7 +133,8 @@ button {outline: none; background: none;}
                               font-weight: bold; color: #fff; 
                               text-shadow: 2px 3px #aaa081; }
 
-                              /* article6 구역 */
+
+ /* article6 구역 */
 .article6 {margin-top: 100px;}
 .article6 .column .imgef {position: relative; overflow: hidden;}
 .article6 .column .imgef::after {content: ""; width: 150%; height: 200%; z-index: 11;
@@ -191,6 +189,7 @@ button {outline: none; background: none;}
 .article9 ul li:nth-child(3n) {margin-right: 0;}
 /* .article9 ul li img {box-shadow: 0px 10px 20px 0px rgb(33 37 43 / 5%)} */
 .article9 ul li img:hover {opacity: 0.5}
+
 
 
 /* article10 구역 */

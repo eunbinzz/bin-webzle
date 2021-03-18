@@ -24,8 +24,8 @@ img {vertical-align: middle;}
                 padding: 30px;}
 .article9 form .allbox {border: 2px solid #999; text-align: center;}
 .article9 form p {padding: 10px;}      
-.article9 form input {padding: 5px 0;}      
+.article9 form input {padding: 5px 0;}     
 .article9 form button {background: #aaa081; padding: 5px 10px; margin-top: 20px;
-                        border-radius: 5px; }
+                        border-radius: 5px; text-align: center;}
 .article9 .closeform {position: absolute; top: -14px; right:-8px;
                      font-size: 35px; color: #333;}
