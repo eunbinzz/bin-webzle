@@ -1,3 +1,3 @@
-# jo-webzle
+# bin-webzle
 
-https://eunbinzz.github.io/jo-webzle/
+https://eunbinzz.github.io/bin-webzle/
