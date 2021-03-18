@@ -178,8 +178,7 @@
     .article6 .column2 p {color: #555; font-size: 18px; line-height: 2; margin-top: 30;}  
 /* article7*/
     .article7 .programm {padding: 40px 0px 40px 20px; background: #fff; margin-bottom: 25px; text-align: center;
-                         overflow: hidden; text-overflow: ellipsis; word-break: keep-all; margin-left: 30px;
-                         margin-right: 30px;}
+                         overflow: hidden; text-overflow: ellipsis; word-break: keep-all; }
     .article7 .programm .first {float: unset; width: 100%; display: block;}
     .article7 .programm .first p {display: block; font-size: 45px; font-weight: bold ; 
                                   padding-right: 0px; padding-bottom: 15px;}
