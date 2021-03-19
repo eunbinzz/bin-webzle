@@ -21,7 +21,7 @@ img {vertical-align: middle;}
                     background: rgba(0,0,0,0.5); display: none;}
 .article9 form {width: 500px; margin: 0 auto; background: #eee; 
                 position: relative; transform: translateY(-50%); top: 50%;
-                padding: 30px 30px 25px; border: 5px solid #aaa081; text-align: center;}
+                padding: 30px 30px 25px; text-align: center;}
 .article9 form .allbox {border: 2px solid #888; text-align: center;}
 .article9 form p {padding: 10px; font-weight: 600;}      
 .article9 form input {padding: 5px 0 5px 7px}     
