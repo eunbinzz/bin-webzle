@@ -22,7 +22,7 @@ $.ajax({
 function dataPrint() {
     var gallery = '';
     for (var i in photolist) {
-        gallery += `<li><img src="${photolist[i].Img}" onerror="this.src='img/no-photo.jpg'" alt="">`
+        gallery += `<li><img src="${photolist[i].Img}" onerror="this.src='img/no-photo2.jpg'" alt="">`
         gallery += `<p>${photolist[i].Title}</p><button type="button"><i class="far fa-trash-alt"></i></button></li>`
     }
     $('.article9 .row').append(`<ul class="gallery">${gallery}</ul>`)
