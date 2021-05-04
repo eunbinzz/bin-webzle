@@ -19,7 +19,7 @@
     <script src="js/jquery.mousewheel.min.js"></script>
 </head>
 
-<body>
+<body onload="wopen()">
     <div class="wrap">
         <header id="header">
             <div class="top_menu">
@@ -514,6 +514,29 @@
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
     <script src="js/ajax.js"></script>
+
+    <script>
+        function getCookie(name) {
+            var cookie = document.cookie
+			if (cookie != "") {
+				var cname = cookie.split(';')
+				for (var i in cname) {
+					var ncname = cname[i].split('=')
+					if (ncname[0] == name) {
+						return ncname[1]
+					}
+				}
+			}
+			return
+		}
+
+        function wopen(){
+            var cookieCheck = getCookie('popupYN')
+            if (cookieCheck != 'N') {
+                window.open('popup.html', '', 'left=30, top=300, width=500, height=550, scrollbars=no resizable=yes')
+            }
+        }
+    </script>
 </body>
 
 </html>
